@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="mobil.css">
 </head>
 <body>
-   
+   <header>
+        <h1>Címjegyzék</h1>
+        <nav>
+            <button id="contactsViewBtn">Névjegyek</button>
+            <button id="groupsViewBtn">Csoportok</button>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="contactsView">
+            <button id="addContactBtn">+ Új névjegy</button>
+            <div id="contactsList"></div>
+            <form id="contactForm" class="hidden">
+                <h2>Névjegy adatai</h2>
+                <input type="text" id="lastName" placeholder="Vezetéknév" required>
+                <input type="text" id="firstName" placeholder="Keresztnév" required>
+                <input type="tel" id="homePhone" placeholder="Otthoni telefonszám">
+                <input type="tel" id="mobilePhone" placeholder="Mobil telefonszám">
+                <input type="email" id="email" placeholder="E-mail">
+                <input type="text" id="address" placeholder="Lakcím">
+                <input type="date" id="birthdate" placeholder="Születési dátum">
+                <textarea id="note" placeholder="Megjegyzés"></textarea>
+                <div id="groupSelectContainer"></div>
+                <button type="submit">Mentés</button>
+                <button type="button" id="cancelContactBtn">Mégse</button>
+            </form>
+        </section>
+        
+        <section id="groupsView" class="hidden">
+            <button id="addGroupBtn">+ Új csoport</button>
+            <div id="groupsList"></div>
+            <form id="groupForm" class="hidden">
+                <h2>Csoport adatai</h2>
+                <input type="text" id="groupName" placeholder="Csoport neve" required>
+                <input type="text" id="groupDesc" placeholder="Leírás (opcionális)">
+                <button type="submit">Mentés</button>
+                <button type="button" id="cancelGroupBtn">Mégse</button>
+            </form>
+        </section>
+    </main>
+    <script src="mobil.js"></script>
 </body>
 </html>
