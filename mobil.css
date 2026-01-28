@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+header {
+    background: #1976d2;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+nav button {
+    background: #fff;
+    color: #1976d2;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+}
+nav button.active, nav button:hover {
+    background: #1565c0;
+    color: #fff;
+}
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+}
+#contactsList, #groupsList {
+    margin: 1rem 0;
+}
+.card {
+    background: #e3f2fd;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(25,118,210,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+button {
+    outline: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+input, textarea, select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    font-size: 1rem;
+}
+textarea {
+    resize: vertical;
+}
+button[type="submit"] {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button[type="button"] {
+    background: #bdbdbd;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hidden {
+    display: none !important;
+}
+@media (max-width: 600px) {
+    main {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1rem;
+    }
+    header {
+        padding: 0.7rem;
+    }
+}
